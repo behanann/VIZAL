@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VIZAL — a playful DSA algorithm visualizer for sorting, searching, and pathfinding.">
+  <title>VIZAL — Algo Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&family=Inter:wght@300;400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="top-nav">
+      <a class="brand" href="index.html" aria-label="VIZAL home">
+        <span class="brand-mark" aria-hidden="true"><span>vz</span></span>
+        <span class="brand-name">VIZAL</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="sorting.html">Sorting</a>
+        <a href="searching.html">Searching</a>
+        <a href="pathfinder.html">Pathfinder</a>
+      </nav>
+      <a class="btn btn-outline" data-github href="https://github.com/your-username/vizal" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </header>
+
+    <main>
+      <section class="hero home-hero">
+        <span class="tagline"><span>✦</span> designed for curious DSA learners</span>
+        <h1>Understand algorithms<br>by <mark>seeing</mark> them.</h1>
+        <p class="hero-subhead">A hand-crafted visual playground for sorting, searching, and pathfinding — slow it down, poke it, change the data, and watch the logic unfold.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="sorting.html">→ Explore sorting</a>
+          <a class="btn btn-pastel" href="pathfinder.html">Try pathfinder</a>
+        </div>
+        <p class="reassurance">3rd semester DSA project · built with vanilla HTML, CSS &amp; JavaScript</p>
+
+        <div class="sketch sketch-left" aria-hidden="true">
+          <svg viewBox="0 0 180 180">
+            <path d="M20 32 L134 15 L160 135 L47 162 Z"/>
+            <path d="M52 54 q12 -14 22 0 q10 14 22 0"/>
+            <path d="M53 78 L126 67 M55 93 L113 84 M57 110 L123 99"/>
+            <circle cx="44" cy="79" r="2"/><circle cx="47" cy="94" r="2"/><circle cx="49" cy="111" r="2"/>
+          </svg>
+        </div>
+        <div class="sketch sketch-right" aria-hidden="true">
+          <svg viewBox="0 0 180 180">
+            <path d="M45 15 q70 18 111 65 q-24 38 -83 85 q-50 -42 -28 -150z"/>
+            <path d="M58 48 q15 -13 28 0 q12 13 28 0 q12 -11 22 0"/>
+            <path d="M57 73 q15 -13 28 0 q12 13 28 0 q12 -11 22 0"/>
+            <path d="M61 99 L136 82 M66 116 L123 102"/>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-intro">
+          <span class="eyebrow">pick a playground</span>
+          <h2>Three ways to make<br><mark>DSA click.</mark></h2>
+          <p>Each visualizer gives you direct control over the data and the pace, so the algorithm becomes something you can experiment with rather than memorize.</p>
+        </div>
+
+        <div class="feature-grid">
+          <a class="sticky-card mint" href="sorting.html">
+            <span class="card-number">01</span>
+            <h3>Sorting</h3>
+            <p>Bubble, Insertion, Selection, Merge and Quick — animated one comparison at a time.</p>
+            <span class="card-arrow">Explore →</span>
+            <div class="mini-bars" aria-hidden="true"><i style="height:30%"></i><i style="height:75%"></i><i style="height:50%"></i><i style="height:90%"></i><i style="height:45%"></i></div>
+          </a>
+          <a class="sticky-card blush" href="searching.html">
+            <span class="card-number">02</span>
+            <h3>Searching</h3>
+            <p>Follow Linear and Binary Search as they narrow the hunt for your target value.</p>
+            <span class="card-arrow">Explore →</span>
+            <div class="search-doodle" aria-hidden="true">⌕</div>
+          </a>
+          <a class="sticky-card teal" href="pathfinder.html">
+            <span class="card-number">03</span>
+            <h3>Pathfinder</h3>
+            <p>Draw walls, choose endpoints, and watch BFS or DFS travel through the grid.</p>
+            <span class="card-arrow">Explore →</span>
+            <div class="grid-doodle" aria-hidden="true"></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div class="sticky-note yellow">
+          <span class="eyebrow">the idea</span>
+          <h3>Don't just run it.<br><mark>See the thinking.</mark></h3>
+        </div>
+        <div class="copy-block">
+          <p>Algorithms are sequences of tiny decisions. VIZAL turns those decisions into motion: comparisons light up, values move, nodes get visited, and paths reveal themselves.</p>
+          <ul class="check-list">
+            <li><span>✓</span> User-defined values</li>
+            <li><span>✓</span> Play / reset controls</li>
+            <li><span>✓</span> Adjustable animation speed</li>
+            <li><span>✓</span> Interactive edits and exploration</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark"><span>vz</span></span>
+          <span class="brand-name">VIZAL</span>
+        </a>
+        <p>Made by Behanan Zachariah<br>as a 3rd semester DSA project.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <span class="footer-label">playgrounds</span>
+          <a href="sorting.html">Sorting</a>
+          <a href="searching.html">Searching</a>
+          <a href="pathfinder.html">Pathfinder</a>
+        </div>
+        <div>
+          <span class="footer-label">project</span>
+          <a data-github href="https://github.com/your-username/vizal" target="_blank" rel="noreferrer">GitHub repository ↗</a>
+          <a href="README.md">Documentation</a>
+        </div>
+      </div>
+      <p class="footer-bottom">Built for learning · © 2026 VIZAL</p>
+    </footer>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

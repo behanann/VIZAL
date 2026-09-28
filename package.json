@@ -1,0 +1,10 @@
+{
+  "name": "vizal",
+  "version": "1.0.0",
+  "description": "VIZAL \u2014 interactive DSA algorithm visualizer",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "preview": "npx serve ."
+  }
+}

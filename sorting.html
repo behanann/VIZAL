@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIZAL — Sorting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&family=Inter:wght@300;400;500;600;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="site-shell">
+  <header class="top-nav">
+    <a class="brand" href="index.html"><span class="brand-mark"><span>vz</span></span><span class="brand-name">VIZAL</span></a>
+    <nav class="main-nav"><a class="active" href="sorting.html">Sorting</a><a href="searching.html">Searching</a><a href="pathfinder.html">Pathfinder</a></nav>
+    <a class="btn btn-outline" data-github href="https://github.com/your-username/vizal" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </header>
+  <main class="tool-page">
+    <section class="tool-hero">
+      <span class="tagline"><span>↕</span> arrange the chaos</span>
+      <h1>Sorting <mark>visualizer.</mark></h1>
+      <p>Change the values, choose an algorithm, and watch each comparison and swap happen in sequence.</p>
+    </section>
+    <section class="visualizer-panel">
+      <div class="toolbar">
+        <div class="control-group">
+          <label for="sort-algorithm">Algorithm</label>
+          <select id="sort-algorithm"><option>Bubble Sort</option><option>Insertion Sort</option><option>Selection Sort</option><option>Merge Sort</option><option>Quick Sort</option></select>
+        </div>
+        <div class="control-group speed-control">
+          <label for="sort-speed">Speed <output id="sort-speed-value">50%</output></label>
+          <input id="sort-speed" type="range" min="10" max="100" value="50">
+        </div>
+        <button id="sort-play" class="btn btn-primary">→ Play</button>
+        <button id="sort-reset" class="btn btn-soft">Reset</button>
+      </div>
+      <div class="array-actions">
+        <div class="inline-form">
+          <label for="new-value">Value</label>
+          <input id="new-value" type="number" min="1" max="100" value="50">
+          <button id="sort-push" class="btn btn-small btn-pastel">Push</button>
+          <button id="sort-pop" class="btn btn-small btn-soft">Pop</button>
+        </div>
+        <button id="sort-randomize" class="btn btn-small btn-outline">Randomize</button>
+      </div>
+      <div id="sort-array" class="array-stage" aria-label="Sorting array visualization"></div>
+      <div class="stage-status"><span id="sort-status-dot"></span><span id="sort-status">Ready — edit a value or press play.</span></div>
+    </section>
+    <section class="how-section">
+      <div class="section-intro"><span class="eyebrow">your controls</span><h2>Make the data<br><mark>your own.</mark></h2></div>
+      <div class="control-cards">
+        <div class="mini-card mint"><strong>01</strong><h3>Edit values</h3><p>Use the ↑ and ↓ buttons on every bar to change individual elements.</p></div>
+        <div class="mini-card blush"><strong>02</strong><h3>Push / Pop</h3><p>Add a custom value or remove the last element from the array.</p></div>
+        <div class="mini-card teal"><strong>03</strong><h3>Slow it down</h3><p>Lower the speed when you want to follow every comparison.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer compact"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark"><span>vz</span></span><span class="brand-name">VIZAL</span></a><p>Made by Behanan Zachariah · 3rd semester DSA project.</p></div><a data-github class="footer-repo" href="https://github.com/your-username/vizal" target="_blank" rel="noreferrer">GitHub repository ↗</a></footer>
+</div>
+<script src="js/app.js"></script><script src="js/algorithms.js"></script>
+</body>
+</html>
